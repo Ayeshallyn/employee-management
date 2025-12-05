@@ -60,3 +60,36 @@ function addEmployee(e) {
 
 employeeForm.onsubmit = addEmployee;
 renderTable();
+
+// REGISTER
+function registerUser(event) {
+    event.preventDefault();
+
+    const email = document.getElementById('regEmail').value;
+    const password = document.getElementById('regPassword').value;
+
+    localStorage.setItem("userEmail", email);
+    localStorage.setItem("userPassword", password);
+
+    alert("Registered successfully!");
+    window.location.href = "login.html";
+}
+
+// LOGIN
+function loginUser(event) {
+    event.preventDefault();
+
+    const email = document.getElementById('loginEmail').value;
+    const password = document.getElementById('loginPassword').value;
+
+    const savedEmail = localStorage.getItem("userEmail");
+    const savedPassword = localStorage.getItem("userPassword");
+
+    if (email === savedEmail && password === savedPassword) {
+        alert("Login successful!");
+        window.location.href = "index.html";
+    } else {
+        alert("Invalid email or password!");
+    }
+}
+
