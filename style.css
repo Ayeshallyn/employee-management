@@ -86,3 +86,66 @@ button.edit:hover {
 button.delete:hover {
     background-color: #c82333;
 }
+
+/* Background for login/register */
+.auth-bg {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+    font-family: Arial, sans-serif;
+}
+
+/* Simple white box */
+.auth-box {
+    background: white;
+    padding: 25px;
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.auth-box h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.auth-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.auth-box button {
+    width: 100%;
+    padding: 10px;
+    background: #4a72ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.auth-box button:hover {
+    background: #3559d9;
+}
+
+.auth-box a {
+    color: #4a72ff;
+    text-decoration: none;
+}
+
+.auth-box p {
+    text-align: center;
+    margin-top: 10px;
+}
+
