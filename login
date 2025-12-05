@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Login</h2>
+    <form onsubmit="loginUser(event)">
+        <input type="text" id="loginEmail" placeholder="Email" required><br>
+        <input type="password" id="loginPassword" placeholder="Password" required><br>
+        <button type="submit">Login</button>
+    </form>
+
+    <p>No account? <a href="register.html">Register here</a></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
